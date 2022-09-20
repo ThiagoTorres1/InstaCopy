@@ -1,29 +1,30 @@
 import 'package:flutter/material.dart';
+import '../models/user.dart';
 
 class FriendStorie extends StatelessWidget {
-  const FriendStorie({Key? key}) : super(key: key);
+  final User? user;
+  const FriendStorie({Key? key, this.user}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const CircleAvatar(
-          radius: 32,
-          backgroundImage: NetworkImage(
-            'https://images.pexels.com/photos/13623557/pexels-photo-13623557.jpeg?cs=srgb&dl=pexels-regina-trissteria-13623557.jpg&fm=jpg',
+    return Container(
+      margin: const EdgeInsets.only(right: 16),
+      child: Column(
+        children: [
+          CircleAvatar(
+            radius: 32,
+            backgroundImage: NetworkImage(
+              user!.imageUrl,
+            ),
           ),
-        ),
-        const Icon(
-          Icons.add_circle_rounded,
-          color: Colors.blue,
-        ),
-        const SizedBox(height: 4),
-        Container(
-          alignment: Alignment.center,
-          width: 64,
-          child: const Text('Seu Story'),
-        ),
-      ],
+          const SizedBox(height: 4),
+          Container(
+            alignment: Alignment.center,
+            width: 64,
+            child: Text(user!.name),
+          ),
+        ],
+      ),
     );
   }
 }

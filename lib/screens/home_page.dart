@@ -52,12 +52,13 @@ class HomePage extends StatelessWidget {
           ),
         ),
         child: ListView.builder(
-          itemCount: UserInfo().userCount,
+          scrollDirection: Axis.horizontal,
+          itemCount: UserInfo.userCount,
           itemBuilder: (context, index) {
             if (index == 0) {
               return CreateStories();
             }
-            return FriendStorie();
+            return FriendStorie(user: UserInfo.users[index]);
           },
         ),
       ),
