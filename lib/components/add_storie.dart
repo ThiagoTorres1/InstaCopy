@@ -1,28 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:insta_copy/models/user.dart';
-import 'package:insta_copy/models/user_info.dart';
 
 class CreateStories extends StatelessWidget {
-  final UserInfo? user;
+  final User? user;
   const CreateStories({Key? key, this.user}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(right: 16),
+      margin: const EdgeInsets.only(right: 16, top: 7),
       child: Column(
         children: [
           Stack(
             alignment: Alignment.bottomRight,
-            children: const [
+            children: [
               CircleAvatar(
                 radius: 32,
+                backgroundColor: const Color.fromARGB(255, 214, 214, 214),
                 backgroundImage: NetworkImage(
-                    'https://images.pexels.com/photos/13623557/pexels-photo-13623557.jpeg?cs=srgb&dl=pexels-regina-trissteria-13623557.jpg&fm=jpg'),
+                  user!.imageUrl,
+                ),
               ),
-              Icon(
-                Icons.add_circle_rounded,
-                color: Colors.blue,
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.white,
+                ),
+                child: const Icon(
+                  Icons.add_circle_rounded,
+                  color: Color.fromARGB(255, 34, 127, 202),
+                ),
               ),
             ],
           ),
