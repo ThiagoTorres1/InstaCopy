@@ -1,4 +1,4 @@
-import 'package:insta_copy/data/dummy_data.dart';
+import 'package:insta_copy/data/dummy_user_data.dart';
 import 'package:insta_copy/models/user.dart';
 
 class UserInfo {
