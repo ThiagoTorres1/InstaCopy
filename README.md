@@ -1,16 +1,9 @@
-# insta_copy
+# InstCopy
 
-A new Flutter project.
+## Sobre
+O InstaCopy é um clone da página inicial do aplicativo do instagram feito em Flutter. Fiz para colocar em prática meus conhecimentos em flutter e buscar uma evolução feita passo a passo.
 
-## Getting Started
+### Imagens
+![Tela inicial com stories](https://user-images.githubusercontent.com/93986413/191807536-d4149af8-9352-4175-b1c4-315fdc8be9ed.jpg)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Tela inicial post](https://user-images.githubusercontent.com/93986413/191807561-2ee9583c-ab87-4542-b18b-c96e26272d7d.jpg)
